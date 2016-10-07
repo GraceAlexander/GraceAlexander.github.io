@@ -4,6 +4,7 @@
     float: left;
     width: 100vw;
     height: 100vh;
+    background-color: #ffffff;
 }
 
 /*.docScroller {
@@ -38,14 +39,17 @@ h1 {
 h2 {
     font-size: 30px !important;
 }
-
+br {
+        display: block; /* makes it have a width */
+        content: ""; /* clears default height */
+        margin-top: 9px; /* change this to whatever height you want it */
+     }
 .mdl-navigation__link {
     color: black !important;
 }
 
 .mdl-card__supporting-text {
     color: black !important;
-    font-size:
 }
 
 .mdl-grid {
@@ -67,9 +71,9 @@ h2 {
     color: black !important;
 }
 .active-nav {
-  font-size: 21px !important;
+  font-size: 16px !important;
   font-weight: bold !important;
-  color: purple !important;
+  color: #16697a !important;
 }
 
 
@@ -103,16 +107,20 @@ h2 {
     padding: 0px 20px 0px 0px;
     position: relative;
 }
+.about.mdl-cell{
+    height: 30px ;
+}
 
 .about-image.mdl-card {
-    background: url('../images/Name.jpg') center / cover;
+    background: url('../images/On-mountain.jpg') center / cover;
+    height: 425px !important;
 }
 
 /*#about>div>div>div {
     height: 37vh !important;
 }*/
 
-#about>.inside {
+#about > .inside {
     background: none;
     opacity: 1;
 }
@@ -131,27 +139,33 @@ h2 {
     opacity: 1;
 }
 
-
+.card-title{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
 /*Skills page*/
 
 #skills {
   text-align: center;
 }
 
-.skills-group>.mdl-chip {
-    background-color: #e67987;
-}
 
 .languages-group>.mdl-chip {
-    background-color: #929cd7;
+    background-color: #d7e3fc;
 }
-
-.tools-group>.mdl-chip {
-    background-color: #fec39b;
+.skills-group>.mdl-chip {
+    background-color: #def1d9;
 }
-
 .frameworks-group>.mdl-chip {
-    background-color: #aed8ae;
+    background-color: #e4e4e4;
+}
+.tools-group>.mdl-chip {
+    background-color: #f1e0e1;
+}
+.awards-group>.mdl-chip {
+    background-color: #f1e8d8;
 }
 
 #skills > .inside {
@@ -163,11 +177,15 @@ h2 {
 /* Footer */
 
 .mdl-mini-footer {
-    background-color: #fdeee3 !important;
-    color: black !important;
+    background-color: #e0f0e8 !important;
+    color: #16697a !important;
     justify-content: center !important;
     -webkit-justify-content: center !important;
     -ms-flex-pack: center !important;
+}
+#footer-info{
+    width: 100%;
+    text-align: center;
 }
 
 .fa {
@@ -181,7 +199,7 @@ h2 {
         height: 150vh;
     }
     .mdl-card {
-        height: 230px !important;
+        height: 200px !important;
     }
 }
 
