@@ -1,4 +1,3 @@
-/* Shared CSS */
 
 .page {
     float: left;
@@ -115,6 +114,9 @@ br {
     background: url('../images/On-mountain.jpg') center / cover;
     height: 425px !important;
 }
+#about-card{
+    height: 100px !important;
+}
 
 /*#about>div>div>div {
     height: 37vh !important;
@@ -133,12 +135,73 @@ br {
     padding: 20px 10px 0px 10px;
     float: left;
 }
+.experience-icon {
+    height: 40px;
+    padding-right: 15px;
+    padding-top: 20px;
+    float: left;
+}
+.experience-title{
+    padding-top: 5px;
+}
 
+#experience-option-1{
+    width: 400px;
+    padding-top: 5px;
+    display: block;
+    margin: 0px;
+    color: #008ca8;
+}
+#experience-option-2{
+    width: 400px;
+    padding-top: 5px;
+    display: block;
+    margin: 0px;
+}
+#experience-option-3{
+    width: 400px;
+    padding-top: 5px;
+    display: block;
+    margin: 0px;
+}
+#experience-option-4{
+    width: 400px;
+    padding-top: 5px;
+    display: block;
+    margin: 0px;
+}
+#experiences{
+    width: 100px;
+    margin: 0px;
+}
+
+#experience-option-1:hover{
+    color: #16697a !important;
+}
+#experience-option-2:hover{
+    color: #16697a !important;
+}
+#experience-option-3:hover{
+    color: #16697a !important;
+}
+#experience-option-4:hover{
+    color: #16697a !important;
+}
+#experience-card >.mdl-shadow--3dp{
+    float: right;
+    width: 500px;
+    display: block;
+    margin: 0;
+}
 #experience>.inside {
     background: none;
     opacity: 1;
 }
-
+#experience-card{
+    margin-top: 15px;
+    height: 325px !important;
+    padding: 7px;
+}
 .card-title{
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -193,15 +256,20 @@ br {
     cursor: pointer;
 }
 
-
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1010px) {
+    #experience-card{
+        width: 100%;
+        height: 350px;
+    }
+}
+/*@media screen and (max-width: 840px) {
     #experience {
         height: 150vh;
     }
     .mdl-card {
         height: 200px !important;
     }
-}
+}*/
 
 @media screen and (max-width: 450px) {
     #name > h1 {
