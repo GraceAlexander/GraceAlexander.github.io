@@ -24,10 +24,18 @@
 }
 
 .page-title {
-    position: absolute;
-    margin: 4vh 0 0 10vw;
+    padding-top: 25px;
+    padding-left: 65px;
+    padding-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
 }
 
+.portfolio-image{
+    max-width: 200px;
+}
 
 /* -> overwrite MDL */
 
@@ -48,35 +56,58 @@ br {
 }
 
 .mdl-card__supporting-text {
-    color: black !important;
+    color: white !important;
 }
 
 .mdl-grid {
     padding-left: 0px !important;
 }
 
-.mdl-card {
-    height: 40vh !important;
-}
+
 
 
 /* Header */
+.header_name{
+    position: absolute;
+    display:inline-block;
+/*    padding-left: 30%;
+*/    float: left;
+    top:0;
+}
 .main-nav {
     position: fixed;
     width: 100%;
-    top: 0
+    top: 0;
+}
+
+.mdl-layout__header-row .mdl-navigation{
+   padding-top: 50px;
+}
+.mdl-layout__header-row{
+  
+    background-color: #04470b;
+    height: 115px;
+
 }
 .mdl-navigation__link {
-    color: black !important;
+    color: white;
 }
-.active-nav {
+/*.active-nav {
   font-size: 16px !important;
   font-weight: bold !important;
   color: #16697a !important;
 }
-
+*/
 
 /* Home page */
+.spacer{
+    height: 80px;
+    display: inline-block;
+}
+.littlespacer{
+    height: 40px;
+    display: inline-block;
+}
 
 #name {
     display: inline-block;
@@ -87,35 +118,71 @@ br {
     margin-right: auto;
 }
 
-#home {
-    background: url('../images/Name.jpg') center / cover;
+.hi{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    /*padding-left: 50px;*/
+}
+.ican{
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+    /*padding-right: 50px;*/
 }
 
-#home>.inside {
-    background: none;
-    opacity: 1;
+h2{
+    color: #ff8d53 !important;
 }
 
+#home{
+    background: #ff8d53;
+    width: 100%;
+    text-align:center;
+}
+#myCanvas{
+      display: inline;
+}
 
 /* About page */
 
-#Name-about-image {
-    width: 310px;
-    height: 400px;
-    float: left;
-    padding: 0px 20px 0px 0px;
-    position: relative;
+#about-card{
+    margin-left: 40px;
 }
-.about.mdl-cell{
-    height: 30px ;
+#about-card .mdl-card__supporting-text{
+    font-size: 18px;
+    color: black !important;
+    line-height: 22px;
+    width: 100%;
+    padding-top: 0px;
+}
+#about .mdl-card {
+    height: 400px !important;
+}
+#fun{
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 100px;
+    border-radius: 12px;
+
+    background-color: #ff4f29; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-.about-image.mdl-card {
-    background: url('../images/On-mountain.jpg') center / cover;
-    height: 425px !important;
+#fun:hover{
+    font-weight: bold;
+
 }
-#about-card{
-    height: 100px !important;
+.proj:hover{
+    color: #ff9b64;
+    font-weight: bold;
 }
 
 /*#about>div>div>div {
@@ -126,23 +193,84 @@ br {
     background: none;
     opacity: 1;
 }
+#about .mdl-cell{
+    max-width: 400px;
+}
+/*WhatIDo*/
+.WhatIDo .mdl-card {
+    height: 260px !important;
+    max-width: 260px;
+    min-width: 260px;
+}
+.WhatIDo{
+     max-width: 850px;
+}
+.WhatIDo .card-image{
+    height: 200px;
+    padding: 30px 0px 0px 15%;
+    float: center;
+}
+
+div.wrapper{  
+    float:left; /* important */  
+    position:relative; /* important(so we can absolutely position the description div */  
+}  
+div.description{  
+    position:absolute; /* absolute position (so we can position it where we want)*/  
+    bottom:0px; /* position will be on bottom */  
+    left:0px;  
+    width:100%;  
+    /* styling bellow */  
+    background-color:black;  
+    font-family: 'tahoma';  
+    font-size:15px;  
+    color:white;  
+    opacity:0.6; /* transparency */  
+    filter:alpha(opacity=60); /* IE transparency */  
+}
+h4.description_content{  
+    text-align: center;
+    padding-top: 7px;
+    margin: 0px;
+
+}   
+p.description_content{  
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}  
 
 
 /* Experience page*/
+.WhereIveWorked{
+    max-width: 850px;
+}
 
-.card-image {
-    height: 40px;
-    padding: 20px 10px 0px 10px;
-    float: left;
+
+.WhereIveWorked .mdl-card {
+    height: 250px !important;
+    max-width: 400px;
+    min-width: 300px;
+}
+
+.WhereIveWorked .card-image {
+    height: 150px;
+    padding: 40px 0px 0px 35%;
+    float: center;
 }
 .experience-icon {
     height: 40px;
-    padding-right: 15px;
+    padding-right: 10px;
     padding-top: 20px;
     float: left;
 }
-.experience-title{
-    padding-top: 5px;
+.card-title{
+    text-align: center;
+
+}
+.work-title{
+    text-align: center;
+
 }
 
 #experience-option-1{
@@ -240,8 +368,8 @@ br {
 /* Footer */
 
 .mdl-mini-footer {
-    background-color: #e0f0e8 !important;
-    color: #16697a !important;
+    background-color: #ff8d53 !important;
+    color: white !important;
     justify-content: center !important;
     -webkit-justify-content: center !important;
     -ms-flex-pack: center !important;
@@ -255,27 +383,72 @@ br {
     height: 24px;
     cursor: pointer;
 }
-
-@media screen and (max-width: 1010px) {
-    #experience-card{
-        width: 100%;
-        height: 350px;
-    }
+.navbar-default {
+  background-color: #fffbf8;
+  border: none;
 }
-/*@media screen and (max-width: 840px) {
-    #experience {
-        height: 150vh;
-    }
-    .mdl-card {
-        height: 200px !important;
-    }
-}*/
+.navbar-default .navbar-brand {
+  color: #585858;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #fff8f7;
+}
+.navbar-default .navbar-text {
+  color: #585858;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #585858;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff8f7;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff8f7;
+  background-color: #ff8d53;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #fff8f7;
+  background-color: #ff8d53;
+}
+.navbar-default .navbar-toggle {
+  border: none;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #ff8d53;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #585858;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border: none;
+}
+.navbar-default .navbar-link {
+  color: #585858;
+}
+.navbar-default .navbar-link:hover {
+  color: #fff8f7;
+}
 
-@media screen and (max-width: 450px) {
-    #name > h1 {
-        font-size: 21px !important;
-    }
-    #name > h2 {
-        font-size: 15px !important;
-    }
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #585858;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fff8f7;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff8f7;
+    background-color: #ff8d53;
+  }
 }

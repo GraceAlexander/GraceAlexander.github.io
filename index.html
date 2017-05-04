@@ -9,135 +9,236 @@
     
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/action.js" defer></script>
+    <script type="text/javascript" src="js/interaction.js" defer></script>
     <script type="text/javascript" src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-<body>
-    <div class="docScroller">
-        <!-- Header (Nav Bar) -->
-        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-            <header class="main-nav mdl-layout__header mdl-layout__header--transparent">
-                <div class="mdl-layout__header-row">
-                    <!-- Add spacer, to align navigation to the right -->
-                    <div class="mdl-layout-spacer"></div>
-                    <!-- Navigation. We hide it in small screens. -->
-                    <nav class="mdl-navigation mdl-layout--large-screen-only">
-                        <a class="mdl-navigation__link" href="#home">Home</a>
-                        <a class="mdl-navigation__link" href="#about">About</a>
-                        <a class="mdl-navigation__link" href="#experience">Experience</a>
-                        <a class="mdl-navigation__link" href="#skills">Skills</a>
-                        <a class="mdl-navigation__link" href="#more">Contact</a>
-                    </nav>
-                </div>
-            </header>
-        </div>
 
-        <!-- Home Page -->
-        <div class="page" id="home">
-            <div class="inside">
-                <div id="name">
-                    <h1>Caroline Grace Alexander</h1>
-                    <h2>Developer &nbsp Leader &nbsp Innovator</h2>
-                </div>
-            </div>
-        </div>
+<body>        <!-- Header (Nav Bar) -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Caroline Grace Alexander</a>
+    </div>
 
-        <!-- About Page -->
-        <div class="page" id="about">
-            <h2 class="page-title">About</h2>
-            <div class="inside">
-                <div class="mdl-grid">
-                    <div class="about-image mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--1dp">
-                        <div class="mdl-card__title mdl-card--expand"></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#ProjectsPage">What I do <span class="sr-only">(current)</span></a></li>
+        <li><a href="#WorkPage">Where I've Worked</a></li>
+        <li><a href="#AboutMe">WhoIAm</a></li>
+        <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Who I Am<span class="caret"></span></a> -->
+          <!-- <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul> -->
+        </li>
+        <li><a href="#more">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id="home">
+        
+        <h1 class = "hi"> Hi I'm </h1>
+        <canvas id="myCanvas" width="450" height="200"></canvas>
+        <h1 class = "ican"> I can code, design, lead </h1>
+   
+</div> 
+                <div id="ProjectsPage" class="littlespacer"> </div> 
+                <h2 class = "page-title"> What I Do </h2>     
+                <div  class="WhatIDo mdl-grid">
+                    
+
+                    <div onclick="location.href='project_pages/DSGN308.html';"class="proj mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--3dp">
+                        <div>
+                            <img src="images/projects/DSGN308/main.JPG" alt="Mountain View" class="card-image"></img>
+                           
+                                <h4 class='description_content'>
+                                    Creating a Novel Product
+                                </h4>
+                               <p class='description_content'>
+                                DSGN 308
+                                </p> 
+                        </div>
                     </div>
-                    <div id="about-card" class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--1dp">
-                        <!-- <div class="mdl-card__title mdl-card--expand"></div> -->
+
+                    <div onclick="location.href='project_pages/Atlasify.html';" class="proj mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--3dp">
+                        <div>
+                            <img src="images/projects/Atlasify/main.JPG" alt="Mountain View" class="card-image"></img>
+                            <h4 class='description_content'>
+                                    ML and UI Improvements
+                            </h4>
+                            <p class='description_content'>
+                                Independent Study
+                            </p> 
+                        </div>
                         <div class="mdl-card__supporting-text">
-                            I am a junior studying Computer Science at Northwestern University's School of Engineering. I am interested in interface design, machine learning, and autonomous products. 
-                            <br>
-                            <br>                            
-                            I am from rural Virginia. I love playing outside. I especially like soccer and hiking.
-                            <br>
-                            <br>
-                            I enjoy coding and building with other people. I believe the best products come out of collaboration. I set high goals, and I push myself and my teammates to achieve them. 
+                          
+
+                        </div>
+                    </div>
+                    <div onclick="location.href='project_pages/DSGN306.html';"class="proj mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--3dp">
+                        <div>
+                            <img src="images/projects/DSGN306/main.JPG" alt="Mountain View" class="card-image"></img>
+                            <h4 class='description_content'>
+                                    Creating a Digital Device
+                                    <!-- Physical and Digital Product -->
+                            </h4>
+                            <p class='description_content'>
+                                DSGN 306
+                            </p> 
+                        </div>
+                    </div>
+                    <div onclick="location.href='project_pages/Lighting.html';" class="proj mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--3dp">
+                        <div>
+                            <img src="images/projects/LightingDesign/main.JPG" alt="Mountain View" class="card-image"></img>
+                            <h4 class='description_content'>
+                                Lighting Design
+                            </h4>
+                            <p class='description_content'>
+                                Tonik Tap
+                            </p> 
+                        </div>
+                        
+                    </div>
+                    <div onclick="location.href='project_pages/EPIC.html';" class="proj mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--3dp">
+                        <div>
+                            <img src="images/projects/Epic/main2.JPG" alt="Mountain View" class="card-image"></img>
+                            <h4 class='description_content'>
+                                Tech Team PM
+                            </h4>
+                            <p class='description_content'>
+                                Entrepeneurship In Action
+                            </p> 
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                          
+
+
+                        </div>
+                    </div>
+
+                    <div onclick="location.href='project_pages/CAMI.html';"class="proj mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--3dp">
+                        <div>
+                            <img src="images/projects/Cami/main.JPG" alt="Mountain View" class="card-image"></img>
+                            <h4 class='description_content'>
+                                UI Design
+                            </h4>
+                            <p class='description_content'>
+                                Cami Visualization Lab
+                            </p> 
+                       
+                    </div>
+                </div>
+                    <div onclick="location.href='project_pages/Redesign.html';" class="proj mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--3dp">
+                        <div>
+                            <img src="images/projects/Redesign/main.PNG" alt="Mountain View" class="card-image"></img>
+                            <h4 class='description_content'>
+                                    Class Redesign
+                            </h4>
+                            <p class='description_content'>
+                                Human Computer Interaction 
+                            </p> 
+                        </div>
+                        
+                    </div>
+                    <div onclick="location.href='project_pages/DeltaLab.html';" class="proj mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--3dp">
+                        <div>
+                            <img src="images/projects/DTR/AtomScreenShot.png" alt="Mountain View" class="card-image"></img>
+                            <h4 class='description_content'>
+                                    Growth Mindset in CS
+                            </h4>
+                            <p class='description_content'>
+                                Delta Lab
+                            </p> 
+                        </div>
+                       
+                    </div>
+                    <div onclick="location.href='project_pages/TA.html';" class="proj mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--3dp">
+                        <div>
+                            <img src="images/projects/TA/main.png" alt="Mountain View" class="card-image"></img>
+                            <h4 class='description_content'>
+                                    TA
+                            </h4>
+                            <p class='description_content'>
+                                HCI & Data Structures
+                            </p> 
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            UX Design
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Experience Page -->
-        <div class="page" id="experience">
-            <h2 class="page-title">Experience</h2>
-            <div class="inside">
-                <div class="Experience mdl-grid">
-                    <div>
-                        <div id="experience-option-1" onclick="updateExperienceBlurb('experience-option-1','During the summer of 2016, I used Java to build the front and back ends of a program to assist in code peer reviews. I designed the code structure and interface. The program I wrote takes user preferences and automatically generates needed comparison files for the peer reviews, improving the efficiency of the process.'+
-                        '<br>'+
-                        'I held stakeholder meetings throughout the development cycle to establish requirements for the product and to ensure the product was customized for the users’ needs'+
-                        '<br>'+
-                        'I received the Boeing Achievement Award for Leadership at the end of the summer for the initiative I took with my project and with the team.')">
-                            <img src="images/Boeing-logo.png" alt="Mountain View" class="experience-icon"></img>
-                            <h4 class="experience-title"> The Boeing Company </h4>
-                        </div>
-                        <div id="experience-option-2" onclick="updateExperienceBlurb('experience-option-2','During the summer of 2015, I worked with the FAA’s tool, ERAM (Enroute Automation Modernization) network. I built a new database containing output from vulnerability scans of the network and worked with users to determine requirements for the new database.'+
-                                    '<br>'+
-                                    'I then designed and built the new database using Microsoft Access and SQL to compile system vulnerability scan results, analyze the data, and generate reports.'+
-                                    '<br>'+
-                                    'The new system replaced the time-consuming manual process of manipulating Excel spreadsheets and reduced the process time by 93%.')">
-                            <img src="images/Lockheed-logo.png" alt="Mountain View" class="experience-icon"></img>
-                            <h4 class="experience-title"> Lockheed Martin </h4>
-                        </div>
-                        <div id="experience-option-3" onclick="updateExperienceBlurb('experience-option-3','At WildHacks, Northwestern University’s 24 hour hackathon, my team of 4 won Best Use of Postmates API. We also made the Top 10 Overall Hacks and pitched our project to judges in the final round.'+
-                                    '<br>'+
-                                    'We built an app called Open Kitchen, to connect those with food to those in need. We created two interfaces, one for the laptop for people donating food and one for people requesting food via text with Twillio\'s API. We used the Postmates API to connect those people.'+
-                                    '<br>'+
-                                    'Check out the project at http://devpost.com/software/open-kitchen')">
-                        <img src="images/Wildhacks-logo.png" alt="Mountain View" class="experience-icon"></img>
-                            <h4 class="experience-title"> Top 10 Overall Hacks </h4>
-                        </div>
-                         <div id="experience-option-4" onclick="updateExperienceBlurb('experience-option-4','EPIC is a team that promotes undergraduate entrepreneurship on Northwestern’s campus. We do this with programs like start-up competitions, hackathons, classes, and networking events.'+
-                                    '<br>'+
-                                    'Tech team does all the coding for EPIC. We collaborate with other teams to build the website, blog, and the application to join.'+
-                                    '<br>'+
-                                    'As Director of Tech Team, I am responsible for all of Tech Team’s projects and group members. I pair program and individually work with members to ensure everyone is learning and we meet our goals on time.'+
-                                    '<br>'+
-                                    'Check us out at nuisepic.com')">
-                            <img src="images/Epic-logo.png" alt="Mountain View" class="experience-icon"></img>
-                            <h4 class="experience-title"> EPIC Tech Team Director </h4>
+        <div class="spacer" id="WorkPage"> </div>
+
+       <h2 class = "page-title"> Where I've Worked </h2>     
+       <div  class="WhereIveWorked mdl-grid">
+
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--3dp">
+                        <div>
+                            <img src="images/Apple-logo.png" alt="Mountain View" class="card-image"></img>
+                            <h4 class = "work-title">
+                                UX Design
+                            </h4>
+
+                            <p class="card-title">
+                                Apple - Summer 2017
+                            </p>
+                            
                         </div>
                     </div>
-                    <div  id="experience-card" class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--3dp"id="experience-card">
-                        <p>
-                            <div id="experience-blurb">
-                                During the summer of 2016, I used Java to build the front and back ends of a program to assist in code peer reviews. I designed the code structure and interface. The program I wrote takes user preferences and automatically generates needed comparison files for the peer reviews, improving the efficiency of the process.
-                        <br>
-                        I held stakeholder meetings throughout the development cycle to establish requirements for the product and to ensure the product was customized for the users’ needs
-                        <br>
-                        I received the Boeing Achievement Award for Leadership at the end of the summer for the initiative I took with my project and with the team.
-                            </div>
-                        </p>
-                    </div>
-                </div>
-                <!-- <div class="Experience mdl-grid">
+
                     <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--3dp">
                         <div>
                             <img src="images/Boeing-logo.png" alt="Mountain View" class="card-image"></img>
                             <h4 class="card-title">
-        				    				The Boeing Company
-        				    			</h4>
+                                Software Engineer
+                            </h4>
+                            <p class="card-title">
+                                The Boeing Company - Summer 2016
+                            </p>
                         </div>
                         <div class="mdl-card__supporting-text">
-                            During the summer of 2016, I used Java to build the front and back ends of a program to assist in code peer reviews. I designed the code structure and interface. The program I wrote takes user preferences and automatically generates needed comparison files for the peer reviews, improving the efficiency of the process.
+                          <!--   During the summer of 2016, I used Java to build the front and back ends of a program to assist in code peer reviews. I designed the code structure and interface. The program I wrote takes user preferences and automatically generates needed comparison files for the peer reviews, improving the efficiency of the process.
                             <br>
                             <br>
                             I held stakeholder meetings throughout the development cycle to establish requirements for the product and to ensure the product was customized for the users’ needs
                             <br>
                             <br>
-                            I received the Boeing Achievement Award for Leadership at the end of the summer for the initiative I took with my project and with the team.
+                            I received the Boeing Achievement Award for Leadership at the end of the summer for the initiative I took with my project and with the team. -->
+                            Software Engineer
 
 
                         </div>
@@ -146,153 +247,62 @@
                         <div>
                             <img src="images/Lockheed-logo.png" alt="Mountain View" class="card-image"></img>
                             <h4 class="card-title">
-        				    				Lockheed Martin
-        				    			</h4>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            During the summer of 2015, I worked with the FAA’s tool, ERAM (Enroute Automation Modernization) network. I built a new database containing output from vulnerability scans of the network and worked with users to determine requirements for the new database.
-                            <br>
-                            <br>
-                            I then designed and built the new database using Microsoft Access and SQL to compile system vulnerability scan results, analyze the data, and generate reports.
-                            <br>
-                            <br>
-                            The new system replaced the time-consuming manual process of manipulating Excel spreadsheets and reduced the process time by 93%.
-
+                                Database Design
+                             </h4>
+                            <p class="card-title">
+                                Lockheed Martin - Summer 2015
+                            </p>
                         </div>
                     </div>
                     <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--3dp">
                         <div>
-                            <img src="images/Wildhacks-logo.png" alt="Mountain View" class="card-image"></img>
+                            <img src="images/PatentOffice-logo.png" alt="Mountain View" class="card-image"></img>
                             <h4 class="card-title">
-        				    				Top 10 Overall Hacks
-        				    			</h4>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            At WildHacks, Northwestern University’s 24 hour hackathon, my team of 4 won Best Use of Postmates API. We also made the Top 10 Overall Hacks and pitched our project to judges in the final round.
-                            <br>
-                            <br>
-                            We built an app called Open Kitchen, to connect those with food to those in need. We created two interfaces, one for people donating food on a computer and one for people requesting food via text with Twillio's API. We used the Postmates API to connect those people.
-                            <br>
-                            <br>
-                            Check out the project at http://devpost.com/software/open-kitchen
-
-
+                                UI Design
+                            </h4>
+                            <p class="card-title">
+                                The US Patent and Trademark Office - Summer 2016
+                            </p>
                         </div>
                     </div>
-                    <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--3dp">
-                        <div>
-                            <img src="images/Epic-logo.png" alt="Mountain View" class="card-image"></img>
-                            <h4 class="card-title">
-        				    				EPIC Tech Team Director
-        				    			</h4>
-                        </div>
-                        <div class="mdl-card__supporting-text">
-                            EPIC is a team that promotes undergraduate entrepreneurship on Northwestern’s campus. We do this with programs like start-up competitions, hackathons, classes, and networking events.
-                            <br>
-                            <br>
-                            Tech team does all the coding for EPIC. We collaborate with other teams to build the website, blog, and an application for applying to join.
-                            <br>
-                            <br>
-                            As Co-Director of Tech Team, I am responsible for all of Tech Team’s projects and group members. I pair program and individually work with members to ensure everyone is learning and we are meet our goals on time.
-                            <br>
-                            <br>
-                            Check us out at nuisepic.com 
-
-
-
-                        </div>
-                    </div>
-                </div> -->
+                </div>
             </div>
         </div>
 
-        <!-- Skills Page -->
-        <div class="page" id="skills">
+
+         <!-- About Page -->
+        <div class="spacer"> </div>
+
+        <div id="about">
+            <h2 class="page-title">About</h2>
             <div class="inside">
-                <br/>
-                <div class="languages-group">
-                    <h5>Languages</h5>
-                    <span class="mdl-chip">
-      				    			<span class="mdl-chip__text">Java
-      				    			</span>
-                    </span>
-                    <span class="mdl-chip">
-      				    			<span class="mdl-chip__text">Python
-      				    			</span>
-                    </span>
-                    <span class="mdl-chip">
-      				    			<span class="mdl-chip__text">JavaScript
-      				    			</span>
-                    </span>
-                    <span class="mdl-chip">
-                                    <span class="mdl-chip__text">HTML
-                                    </span>
-                    </span>
-                    <span class="mdl-chip">
-                                    <span class="mdl-chip__text">CSS
-                                    </span>
-                    </span>
-                </div>
-                <div class="skills-group">
-                    <h5>Skills</h5>
-                    <span class="mdl-chip">
-      				    			<span class="mdl-chip__text">User Centered Design
-      				    			</span>
-                    </span>
-                    <span class="mdl-chip">
-      				    			<span class="mdl-chip__text">Interface Design
-      				    			</span>
-                    </span>
-                    <span class="mdl-chip">
-      				    			<span class="mdl-chip__text">Database Design
-      				    			</span>
-                    </span>
-                    <span class="mdl-chip">
-                                    <span class="mdl-chip__text">Multithreading
-                                    </span>
-                    </span>
-                </div>
-                <div class="frameworks-group">
-                    <h5>Frameworks</h5>
-                    <span class="mdl-chip">
-      				    			<span class="mdl-chip__text">JQuery Mobile
-      				    			</span>
-                    </span>
-                    <span class="mdl-chip">
-      				    			<span class="mdl-chip__text">AmMap API
-      				    			</span>
-                    </span>
-                </div>
-                <div class="tools-group">
-                    <h5>Tools</h5>
-                    <span class="mdl-chip">
-      				    			<span class="mdl-chip__text">Git
-      				    			</span>
-                    </span>
-                    <span class="mdl-chip">
-      				    			<span class="mdl-chip__text">ClearCase
-      				    			</span>
-                    </span>
-                     <span class="mdl-chip">
-                                    <span class="mdl-chip__text">Netbeans
-                                    </span>
-                    </span>
-                    <span class="mdl-chip">
-      				    			<span class="mdl-chip__text">Unix
-      				    			</span>
-                    </span>
-                   
-                </div>
-                <div class="awards-group">
-                    <h5>Acomplishments</h5>
-                    <span class="mdl-chip">
-                                    <span class="mdl-chip__text">Private Pilots License
-                                    </span>
-                    </span>
-                    <span class="mdl-chip">
-                                    <span class="mdl-chip__text">Filed Provisional Patent
-                                    </span>
-                    </span>                   
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--3dp">
+                        <div>
+                            <img src="images/about_small.jpg" alt="Mountain View" class="card-image"></img>
+                        </div>
+                       
+                    </div>
+                    <div id="about-card" class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--6-col-phone mdl-card mdl-shadow--1dp">
+                        <!-- <div class="mdl-card__title mdl-card--expand"></div> -->
+                        <div class="mdl-card__supporting-text">
+
+                            I am a junior studying Computer Science and Design at Northwestern University. 
+                            <br>
+                            <br>
+                            I am from rural Virginia and love being outside, especially playing soccer and hiking.
+                            <br>
+                            <br>
+                            I enjoy coding and building with other people and believe the best products come out of collaboration. 
+                            <br>
+                            <br>
+                            My interests include product design, interface design, and machine learning.
+
+                            <br>
+                            <br>
+                            <button id="fun" type="button" onclick="location.href='project_pages/JustForFun.html';">Just for Fun</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
