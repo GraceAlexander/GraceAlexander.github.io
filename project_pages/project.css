@@ -108,8 +108,8 @@ ul{
 .supporting-image{
 	max-width: 30%;
 	max-height: 30%;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 .supporting-image-five{
 	max-width: 13%;
