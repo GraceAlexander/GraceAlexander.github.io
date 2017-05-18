@@ -1,1 +1,134 @@
-<img src="../images/projects_fake/Atlasify.jpg" alt="Mountain View" class="card-image"></img>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caroline Grace Alexander</title>
+
+    
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/action.js" defer></script>
+    <script type="text/javascript" src="js/interaction.js" defer></script>
+    <script type="text/javascript" src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Roboto" rel="stylesheet">
+
+<link rel="stylesheet" href="project.css">
+
+<body>        <!-- Header (Nav Bar) -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Caroline Grace Alexander</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="../index.html#ProjectsPage">What I do <span class="sr-only">(current)</span></a></li>
+        <li><a href="../index.html#WorkPage">Where I've Worked</a></li>
+        <li><a href="../index.html#about">Who I Am</a></li>
+        <li><a href="../index.html#more">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id="outerdiv">
+	<h1> Atlasify </h1>
+	<h2 class = "descriptor"> Machine Learning and User Interface Improvements </h2>
+	<div class="content">
+	<div class="bigspacer"></div>
+
+	<img src="../images/projects/Atlasify/main.jpg" alt="Mountain View" class="top-image"></img>
+	<div class = "brief_description"> 
+		<p>
+			I worked on the Atlasify research project with Prof. Doug Downey. The platform is designed to give explanations about how subjects are related to locations. The platform pulls descriptions from Wikipedia and uses Machine Learning to pick the best descriptions. 
+		</p>
+		<h4> Contribution </h4>
+		<p>
+			I designed the interface to increase user feedback and added multiple classifiers to the Machine Learning Algorithim
+		</p>
+		<h4> Links </h4>
+		<p>
+			<a href="http://atlasify.northwestern.edu/
+"> http://atlasify.northwestern.edu/ </a>
+		</p>
+	</div>
+
+	<div class="littlespacer"></div>
+
+	<h4> Interaction </h4>
+	<img src="../images/projects/Atlasify/initial.jpg" alt="Mountain View" class="supporting-image"></img>
+
+	<img src="../images/projects/Atlasify/hover.jpg" alt="Mountain View" class="supporting-image"></img>
+
+	<img src="../images/projects/Atlasify/thankYou.jpg" alt="Mountain View" class="supporting-image"></img>
+	<p class="flush"> 
+			Above is the relatedness ranking interface I designed and developed. <br>
+	</p>
+
+	<img src="../images/projects/Atlasify/old_popover.jpg" alt="Mountain View" class="supporting-image red-border-image"></img>
+	
+	<div class = "brief_description">
+		<p> 
+			In the initial popup (bordered in red), users had to choose a relation and then click submit. There was also a why box which was not necessary to fill out that detered users from submitting any feedback during testing. The machine learning algorithim could not interpret the reason a user typed in, so it was really only necessary to get the number relation data from users to improve the algorithim.
+			
+		</p>
+	</div>
+	<div class="littlespacer"> </div>
+	<div class="twoimagewrapper">
+		<img src="../images/projects/Atlasify/Popover_needfinding.jpg" alt="Mountain View" class="supporting-image-two"></img>
+		<img src="../images/projects/Atlasify/Popover_idea.jpg" alt="Mountain View" class="supporting-image-two"></img>
+	</div>
+	<p class="flush">
+		The sketches above are a mockup for description ranking improvement.
+		<br>
+		<br>
+		The design is consistent with that of the relatedness rankings already implemented since the div contents where you rated are replaced with a thank you message.
+		The potential to help improve the algorithim is discussed and can be visualized with the icon.
+		Two clicks will ensure data is are more accurate (but may decrease volume).
+	</p>	
+	<div class="minispacer"></div>
+	<h4> Algorithim </h4>
+
+
+	<img src="../images/projects/Atlasify/data.jpg" alt="Mountain View" class="top-image"></img>
+	<div class = "brief_description"> 
+		<p >
+			My idea for improving the algorithim was to create history and media classifiers. I noticed a lot of the descriptions that were historical were "good" definitions. I also noticed that the descriptions from fictional books and other fictional media sources were poor descriptors because they were describing relations that weren't true. 
+		</p>
+	</div>
+
+	<p class="flush"> 
+	I created and trained bag of words history and media classifiers using scikit-learn. The media classifier was difficult to properly train because of the low number of media descriptions, but the history one was more accurate. I also incorporated Semantic Relatedness into the algorithm. This is the measure of Wikipedia pages you would have to click through to get to one page from another. A description whose subject has a low SR to both search topics would indicate a closer real world relation to those search topics. 
+		<br>
+		<br>
+	Using user inputed realatedness values, I trained a classifier that took in history, media, and SR relatedness and could predict a new relatedness value.
+</p>
+</div>
+</div>
+</body>

@@ -44,7 +44,6 @@
             
             j=0;
             while(j!=25){
-              console.log(elem)
               minx = Math.ceil(elem[0]-7);
               maxx = Math.floor(elem[0]+7);
               x=(Math.random() * (maxx - minx)) + minx;
@@ -91,7 +90,6 @@
             
             j=0;
             while(j!=20){
-              console.log(elem)
               minx = Math.ceil(elem[0]-7);
               maxx = Math.floor(elem[0]+7);
               x=(Math.random() * (maxx - minx)) + minx;
@@ -148,7 +146,6 @@
             
             j=0;
             while(j!=20){
-              console.log(elem)
               minx = Math.ceil(elem[0]-7);
               maxx = Math.floor(elem[0]+7);
               x=(Math.random() * (maxx - minx)) + minx;
@@ -184,7 +181,6 @@
             
             j=0;
             while(j!=20){
-              console.log(elem)
               minx = Math.ceil(elem[0]-7);
               maxx = Math.floor(elem[0]+7);
               x=(Math.random() * (maxx - minx)) + minx;
@@ -220,7 +216,6 @@
             
             j=0;
             while(j!=20){
-              console.log(elem)
               minx = Math.ceil(elem[0]-7);
               maxx = Math.floor(elem[0]+7);
               x=(Math.random() * (maxx - minx)) + minx;
@@ -428,5 +423,13 @@
         mousePos.y = 9999;
       });
       animate(canvas, balls, time, mousePos);
-
+      
+      function rotateCard(btn){
+        var $card = $(btn).closest('.card-container');
+        if($card.hasClass('hover')){
+            $card.removeClass('hover');
+        } else {
+            $card.addClass('hover');
+        }
+    }
       

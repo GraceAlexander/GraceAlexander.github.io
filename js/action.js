@@ -2,6 +2,15 @@
 // Adapted from http://codepen.io/clokey2k/pen/jgfFD
 $ = jQuery;
 
+var selector = '.nav li';
+
+$(selector).on('click', function(){
+    $(selector).removeClass('active');
+    $(this).addClass('active');
+});
+
+
+
 // $sections includes all of the page divs that relate to menu items.
 var $sections = $('.page');
 var $ft = $('#more');
@@ -64,4 +73,3 @@ function updateSelected(element)
     document.getElementById("experience-option-4").style.color = "black";
     document.getElementById(element).style.color = "#008ca8";
 }
-
