@@ -43,9 +43,16 @@ h4{
 
 p{
 	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+
 }
 ul{
 	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+}
+ol{
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
 }
 
 .twoimagewrapper{
@@ -76,6 +83,13 @@ ul{
 	padding-left: 2%;
 	width: 40%;
 	display: inline-block;
+	vertical-align: top;
+}
+.description{
+	padding-left: 2%;
+	width: 80%;
+	display: block;
+	margin: 0 auto;
 	vertical-align: top;
 }
 .image_description {

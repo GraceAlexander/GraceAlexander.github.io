@@ -72,7 +72,7 @@
 <div id="outerdiv">
 	<h1>  Delta Lab</h1>
 	<h2 class = "descriptor"> Research on Mindset in Computer Science</h2>
-	<h3> What I built </h3>
+  <div class = "bigspacer"> </div>
 
 	<img src="../images/projects/DTR/mindsets.jpg" alt="Mountain View" class="top-image"></img>
 	<div class = "brief_description"> 
@@ -88,21 +88,58 @@
 		</p>
 		<h4> Contribution </h4>
 		<p>
-			My team is working on building a text editor that reinforces the growth mindset as users code. We hypothisize this will have similar outcomes as promoting the growth mindset in math. 
+			The team consists of Elenore O'Rourke, a Northwestern Professor, two other students, and myself. We are working on building a text editor that reinforces the growth mindset as users code. We hypothisize this will have similar outcomes as promoting the growth mindset in math. 
 		</p>
 		<h4> Links </h4>
 		<p>
-			<a href="http://atlasify.northwestern.edu/
-"> http://atlasify.northwestern.edu/ </a>
+			<a href="http://dtr.northwestern.edu/projects/brain_points
+"> Delta Lab Project Page </a>
+<br>
+      <a href="https://github.com/NUDelta/brain-points
+"> Github </a>
 		</p>
 	</div>
 
-	<h4> Design Arguments </h4>
+	<h4> Inital Work </h4>
+		<p> We applied for and recieved a Undergraduate Research Grant.</p>
+    <img src="../images/projects/DTR/idealsituation.jpg" alt="Mountain View" class="top-image"></img>
+    <p> Above is a journey map I drew, showing an ideal outcome </p>
+  <h4> First Study </h4>
+    <p> One of the main questions we are trying to answer is, can you detect the growth mindset while people are coding from keystroke and click data? This is necessary if we want to reward and reinforce the growth mindset.
+      <br>
+    Our first study was an attempt to find answers to that question. We observed 7 students who had already taken one Computer Science class and were currently in an intro to python class. We observed them coding and recorded face and screen capture videos as well as keystroke data.
+  </p>
+      <img src="../images/projects/DTR/package.jpg" alt="Mountain View" class="supporting-image"></img>
 
-	<h4> Study 1 </h4>
-		<p> Determining growth mindset behaviors while coding </p>
+  <img src="../images/projects/DTR/recording.jpg" alt="Mountain View" class="supporting-image"></img>
+
+  <img src="../images/projects/DTR/keystrokes.jpg" alt="Mountain View" class="supporting-image"></img>
+<p class="flush"> 
+  We built an atom package, named Keystrokes, that recorded the keystroke data locally.
+  
+</p>
+<h4> Results </h4>
+<p>
+  We qualitatively coded the videos and wrote python scripts to analyze the data. From this study, we found two detectable metrics to indicate the growth mindset that were consistent with our hypotheses.
+</p>
+    <ol>
+    <li>Detect when code is run
+      <br>
+      The qualitative data (which was more accurate than the keystroke data in this case) showed that participants with a fixed mindset ran the code about 50% more than those with a growth mindset.
+      We hypothesized that people with a fixed mindset would run their code more often because instead of trying to have a deep understanding the code and what it would output, they just try it to see if it works
+  </li>
+  <li>
+    Detect total time spent typing and paused
+    <br>
+    The keystroke data showed us that those with a growth mindset spent 50% longer on the problems, 50% less time typing, 50% more time paused than the fixed mindset participants. 
+    We hypothesized that those with the growth mindset would spend more time paused thinking about what to type (because they are thinking deeply) and that those with a fixed mindset would spend more time typing (because they are trying things that may work and aren’t taking the time to think as deeply).
+  </li>
+ 
+    </ol>
+    </p>
+
 	<h4> Next Steps </h4>
-	 <img src="../images/projects/DTR/AtomScreenShot.png" alt="Mountain View" class="supporting-image-two"></img>
+	<p> We will continue building on the inital growth mindset metrics and inproving the robustness of our detection code. We will also begin prototyping and testing the growth mindset reward method.</p>
 	
 </div>
 </body>
