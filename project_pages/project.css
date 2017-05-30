@@ -1,9 +1,14 @@
+/*body{
+	background-color: #fafafa;
+}*/
 /*img{
 	width: 500px;
 	padding-top: 10px;
 }*/
 #outerdiv{
-	padding: 60px;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 60px;
 }
 .content{
 	padding-left: 50px;
@@ -11,6 +16,7 @@
 
 h1{
 	text-align: center;
+	padding-top: 10px;
 
 }
 .flush{
@@ -38,12 +44,15 @@ h3{
 	color: #ff8d53;
 }
 h4{
+	padding-left: 20px;
 	color: #ff6153;
 }
 
 p{
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
 
 }
 ul{
@@ -59,6 +68,7 @@ ol{
 	display: block;
     margin-left: auto;
     margin-right: auto;
+
 }
 .bigspacer{
 	height: 80px;
@@ -74,6 +84,9 @@ ol{
 .border-image {
    border: 2px solid #ffb753;
 }
+.sketch-border {
+   border: 1px solid #eeeeee;
+}
 
 .red-border-image {
    border: 2px solid #ff6153;
@@ -81,7 +94,7 @@ ol{
 
 .brief_description{
 	padding-left: 2%;
-	width: 40%;
+	width: 45%;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -106,15 +119,21 @@ ol{
 	width: 50%;
 }
 .supporting-image-two{
-	max-width: 40%;
-	max-height: 40%;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	/*padding: 20px;*/
+	max-width: 44%;
+  	margin-left: auto;
+    margin-right: auto;
+
+	
+}
+.supporting-image-two-wrapper{
+	width: 100%;
+	display: inline-block;
+    text-align: center;
 }
 .image-two{
 	max-width: 40%;
 	max-height: 40%;
+	margin-left: 20px;
 
 	/*padding: 20px;*/
 }
@@ -124,6 +143,12 @@ ol{
 	max-height: 30%;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+.supporting-image-wrapper{
+	width: 100%;
+	display: inline-block;
+  	
+    text-align: center;
 }
 .supporting-image-five{
 	max-width: 13%;
@@ -205,4 +230,39 @@ ol{
     background-color: #ff8d53;
   }
 }
+@media only screen and (max-width: 767px) {
+    .brief_description {
+        width:100%;
+        padding-left: 0;
+    }
+    .image_description{
+    	width:100%;
+        padding-left: 0;
+    }
+    .top-image{
+    	width: 100%;
+    	padding-bottom: 20px;
+    }
+    p{
+    	padding-left: 0;
+    }
+    h4{
+    	padding-left: 0;
+    }
+    .content{
+    	padding-left: 0;
+    }
+    .supporting-image{
+    	max-width: 100%;
+    	margin-bottom: 20px;
+    }
+    .supporting-image-two{
+    	max-width: 100%;
+    	margin-bottom: 20px;
+    }
+    .image-two{
+    	max-width: 100%;
+    	margin-bottom: 20px;
+    }
 
+}

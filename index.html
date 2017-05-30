@@ -73,13 +73,15 @@
 <div id="home">
         
         <h1 class = "hi"> Hi I'm </h1>
+        <img id="name" width="450" src="images/name.jpg" alt="Grace">
         <canvas id="myCanvas" width="450" height="200"></canvas>
         <h1 class = "ican"> I can code, design, lead </h1>
    
 </div> 
                 <div id="ProjectsPage" class="littlespacer"> </div> 
-                <h2 class = "page-title"> What I Do </h2>     
+                 
                 <div  class="WhatIDo mdl-grid ">
+                    <h2 class = "page-title"> What I Do </h2>   
                     
                     
 
@@ -145,25 +147,13 @@
                            
                        
                     </div>
+                     
                     
-                    <div onclick="location.href='project_pages/CAMI.html';"class="proj mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card-new ">
-                       
-                            <img src="images/projects/Cami/main.jpg" alt="Mountain View" class="card-image"></img>
-                            <h4 class='description_content'>
-                                UI Design
-                            </h4>
-                            <p class='description_content'>
-                                Cami Visualization Lab
-                            </p> 
-                            <p class="project-label">
-                                    Design, Code
-                            </p>
-                            
-                </div>
+                    
                     
                     <div onclick="location.href='project_pages/DeltaLab.html';" class="proj mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card-new ">
                         
-                            <img src="images/projects/DTR/mindsets.jpg" alt="Mountain View" class="card-image"></img>
+                            <img src="images/projects/DTR/main.jpg" alt="Mountain View" class="card-image"></img>
                             <h4 class='description_content'>
                                     Research on Mindset in CS
                             </h4>
@@ -175,7 +165,6 @@
                             </p>
                             
                     </div>
-
                     <div onclick="location.href='project_pages/Redesign.html';" class="proj mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card-new ">
                     
                             <img src="images/projects/Redesign/main.jpg" alt="Mountain View" class="card-image"></img>
@@ -190,24 +179,26 @@
                             </p>
                            
                     </div>
+                    <div onclick="location.href='project_pages/CAMI.html';"class="proj mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card-new ">
+                       
+                            <img src="images/projects/Cami/main.jpg" alt="Mountain View" class="card-image"></img>
+                            <h4 class='description_content'>
+                                UI Design
+                            </h4>
+                            <p class='description_content'>
+                                Cami Visualization Lab
+                            </p> 
+                            <p class="project-label">
+                                    Design, Code
+                            </p>
+                            
+                </div>
 
                     
 
-                    <div onclick="location.href='project_pages/TA.html';" class="proj mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card-new ">
-                       
-                            <img src="images/projects/TA/main.jpg" alt="Mountain View" class="card-image"></img>
-                            <h4 class='description_content'>
-                                    TA
-                            </h4>
-                            <p class='description_content'>
-                                HCI & Data Structures
-                            </p>
-                            <p class="project-label">
-                                    Lead, Code
-                            </p>
-                            
-                        
-                    </div>
+                    
+
+                   
                      
                    
                     <div onclick="location.href='project_pages/DSGN308.html';"
@@ -225,20 +216,37 @@
                                 <p class="project-label">
                                     Design
                     </div>
+                    <div onclick="location.href='project_pages/TA.html';" class="proj mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card-new ">
+                       
+                            <img src="images/projects/TA/main.jpg" alt="Mountain View" class="card-image"></img>
+                            <h4 class='description_content'>
+                                    TA
+                            </h4>
+                            <p class='description_content'>
+                                HCI & Data Structures
+                            </p>
+                            <p class="project-label">
+                                    Lead, Code
+                            </p>
+                            
+                        
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="spacer"> </div>
+        <div class="minispacer"> </div>
+        <div id="WorkPage"> </div>
 
-        <div class="spacer" id="WorkPage"> </div>
-
-       <h2 class = "page-title"> Where I've Worked </h2>     
+            
        <div  class="WhereIveWorked mdl-grid">
-
+        <h2 class = "page-title"> Where I've Worked </h2>
+                <div class="worked-container mdl-grid">    
                     <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card-new mdl-shadow--3dp">
                         <div class="handhover" onclick="location.href='work_pages/apple.html';">
                             <img src="images/Apple-logo.png" alt="Mountain View" class="card-image"></img>
                             <h4 class = "work-title">
-                                UX Design
+                                User Experience Design
                             </h4>
 
                             <p class="card-title">
@@ -289,6 +297,7 @@
                         <div class="mdl-card__supporting-text">
                           
                         </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -297,17 +306,18 @@
 
          <!-- About Page -->
         <div class="spacer"> </div>
+        <div class="minispacer"> </div>
 
-        <div id="about">
+        <div id="about" class="mdl-grid">
             <h2 class="page-title">About</h2>
             <div id="aboutwrapper">
 
-                <img src="images/about.jpg" alt="Mountain View" class="supporting-image-two"></img>
+                <img src="images/about.jpg" alt="Mountain View" class="aboutimage"></img>
                     
                        
                 
                     
-                        <div class="brief_description">
+                        <div class="abouttext">
 
                             I am pursuing a BS in Computer Science and the Segal Design Certificate and will be graduating in March 2018. 
                             <br>
@@ -320,28 +330,52 @@
                             <br>
                             After school, I hope to use my experience in product design, interface design, and machine learning to build novel products that make people love technology.
                             <br>
-                            <button id="fun" type="button" onclick="location.href='project_pages/JustForFun.html';">What I do for fun</button>
+                             <button id="fun" type="button" onclick="location.href='project_pages/JustForFun.html';">What I do for fun</button>    
+                           
                             <!-- Just for Fun/ New Explorations/ Side Projects -->
-                  </div>      
+                  </div>  
+                  
                 </div>
             </div>
         </div>
-
+         <div class="bigspacer"> </div>
+         <div class="littlespacer"> </div>
         <!-- Footer -->
         <footer class="mdl-mini-footer" id="more">
             <div class="mdl-mini-footer__left-section">
                 <ul class="mdl-mini-footer__link-list">
-                    <li><a href="https://github.com/GraceAlexander" target="_blank"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/caroline-grace-alexander-9b852bb3
-" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a></li>
+
                     <li>
-                        <a href="mailto:carolinealexander2018@u.northwestern.edu"> <i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i></a>
+                        <a href="https://github.com/GraceAlexander" target="_blank">
+                            <i class="fa fa-github-square fa-3x meicon" aria-hidden="true">
+                            </i>
+                        </a>
                     </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/caroline-grace-alexander-9b852bb3
+                        "target="_blank">
+                            <i class="fa fa-linkedin-square fa-3x meicon" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:carolinealexander2018@u.northwestern.edu"> 
+                            <i class="fa fa-envelope-square fa-3x meicon" aria-hidden="true">
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="images/Resume.pdf" download="Caroline_Grace_Alexander_Resume">
+
+                            <img src="images/resumeicon.png" alt="Download Resume" class="resumeicon"></img>
+                        </a>
+                </li>
                 </ul>
             </div>
-            <div id="footer-info">
-                <p> The first iteration of this website was deployed 10/6/16 </p>
-            </div>
+           <!--  <div id="footer-info">
+
+            </div> -->
         </footer>
     </div>
 </body>

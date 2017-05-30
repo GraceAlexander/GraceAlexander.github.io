@@ -44,10 +44,6 @@ function navbarUpdater() {
         });
     }
 
-    // Removes .active-nav from all nav bar options then applies it to appropriate button
-    var id = $currentSection.attr('id');
-    $('a').removeClass('active-nav');
-    $("[href='#" + id + "']").addClass('active-nav');
 }
 
 $(function() {
@@ -59,17 +55,3 @@ $(function() {
     });
 });
 
-function updateExperienceBlurb(element, blurb)
-{
-    document.getElementById("experience-blurb").innerHTML = blurb;
-    updateSelected(element);
-}
-
-function updateSelected(element)
-{
-    document.getElementById("experience-option-1").style.color = "black";
-    document.getElementById("experience-option-2").style.color = "black";
-    document.getElementById("experience-option-3").style.color = "black";
-    document.getElementById("experience-option-4").style.color = "black";
-    document.getElementById(element).style.color = "#008ca8";
-}
