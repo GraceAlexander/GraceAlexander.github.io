@@ -70,7 +70,7 @@
 		</p>
 		<h4> Contribution </h4>
 		<p>
-			I designed the interface to increase user feedback and added multiple classifiers to the Machine Learning Algorithim
+			I designed the interface to increase user feedback and added multiple classifiers to the machine learning algorithim
 		</p>
 		<h4> Links </h4>
 		<p>
@@ -97,7 +97,7 @@
 	
 	<div class = "brief_description">
 		<p> 
-			In the initial popup (bordered in red), users had to choose a relation and then click submit. There was also a why box which was not necessary to fill out that detered users from submitting any feedback during testing. The machine learning algorithm could not interpret the reason a user typed in, so it was really only necessary to get the number relation data from users to improve the algorithm.
+			In the initial popup (bordered in red), users had to choose a relation and then click submit. There was also a why box which was not necessary to fill out that detered users from submitting any feedback during testing. The machine learning algorithm could not interpret the reason a user typed in, so it was really only necessary to get the numerical relation data from users to improve the algorithm.
 			
 		</p>
 	</div>
@@ -110,9 +110,9 @@
 		The sketches above are a mockup for description ranking improvement.
 		<br>
 		<br>
-		The design is consistent with that of the relatedness rankings already implemented since the div contents where you rated are replaced with a thank you message.
-		The potential to help improve the algorithm is discussed and can be visualized with the icon.
-		Two clicks will ensure data is are more accurate (but may decrease volume).
+		The design is consistent with that of the relatedness rankings already implemented since the section contents where you rated are replaced with a thank you message.
+		The potential to help improve the algorithm can be visualized with the icon.
+		Two clicks will ensure data is more accurate (but may decrease volume).
 	</p>	
 	<div class="minispacer"></div>
 	<h4> Algorithim </h4>
@@ -129,7 +129,7 @@
 	I created and trained bag of words history and media classifiers using scikit-learn. The media classifier was difficult to properly train because of the low number of media descriptions, but the history one was more accurate. I also incorporated Semantic Relatedness into the algorithm. This is the measure of Wikipedia pages you would have to click through to get to one page from another. A description whose subject has a low SR to both search topics would indicate a closer real world relation to those search topics. 
 		<br>
 		<br>
-	Using user inputed realatedness values, I trained a classifier that took in history, media, and SR relatedness and could predict a new relatedness value.
+	Using user inputed realatedness values, I trained a classifier that took in history, media, and SR relatedness and could predict a new relatedness value for a description.
 </p>
 </div>
 </div>
