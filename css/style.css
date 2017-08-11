@@ -51,7 +51,7 @@
 
 h1,h2,h3,h4{
 
-    font-family: 'Merriweather', serif !important;
+    font-family: 'Roboto Slab', serif !important;
 }
 
 p{
@@ -146,7 +146,7 @@ br {
     /*padding-right: 50px;*/
 }
 
-h2{
+h2.page-title{
     color: #ff8d53 !important;
 }
 
@@ -264,11 +264,55 @@ h2{
     height: 400;
     cursor: pointer;
 }
-.proj:hover {
-    border-style: solid;
-    border-width: 2px;
-    border-color: grey;
+
+/*Project Boxes*/
+.box {
+  position:relative;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: center;
+  transition: 0.5s;
+  padding-top: 5px;
+  margin-left: 10px;
+  margin-right: 30px;
+  cursor: pointer;
+  border: 1px solid white;
+  -webkit-transition:0.5s;
 }
+
+/*.box:hover {
+  border: 2px solid grey;
+  color: #FFF;
+}*/
+
+.box::before, .box::after {
+  width: 100%;
+  height:100%;
+  z-index: 3;
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  box-sizing: border-box;
+  -webkit-transform: scale(0);
+  transition: 0.5s;
+}
+
+.proj::before {
+  border-bottom: .2em solid #cececf;
+  border-left: .2em solid #cececf;
+  -webkit-transform-origin: 0 100%;
+}
+
+.proj::after {
+  border-top: .2em solid #cececf;
+  border-right: .2em solid #cececf;
+  -webkit-transform-origin: 100% 0%;
+}
+.box:hover::after, .box:hover::before {
+  -webkit-transform: scale(1);
+}
+
 
 .WhatIDo{
     text-align: center;
@@ -278,6 +322,7 @@ h2{
 .WhatIDo .card-image{
     height: 280px;
     margin: 0 auto;
+    margin-top: 2px;
     display: block;
     float: center;
 }
@@ -316,16 +361,52 @@ h4.description_content{
     text-align: center;
     padding-top: 7px;
     margin: 0px;
-
+    color: black !important;
 }   
 p.description_content{  
     text-align: center;
     padding: 0px;
     margin: 0px;
+    color: black !important
 }  
 
 
 /* Experience page*/
+/*Work Boxes*/
+.workbox {
+  transition: 0.5s;
+  cursor: pointer;
+  border: 2px solid #cececf;
+  -webkit-transition:0.5s;
+}
+.workbox::before, .workbox::after {
+  width: 100%;
+  height:100%;
+  z-index: 3;
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  box-sizing: border-box;
+  -webkit-transform: scale(0);
+  transition: 0.5s;
+}
+
+.workproj::before {
+  border-bottom: 2px solid #cececf;
+  border-left: 2px solid #cececf;
+  -webkit-transform-origin: 0 100%;
+}
+
+.workproj::after {
+  border-top: 2px solid #cececf;
+  border-right: 2px solid #cececf;
+  -webkit-transform-origin: 100% 0%;
+}
+.workbox:hover::after, .workbox:hover::before {
+  -webkit-transform: scale(1);
+}
+
 .WhereIveWorked{
     max-width: 1200px;
 }
@@ -342,6 +423,9 @@ p.description_content{
 .WhereIveWorked .mdl-cell {
     text-align: center;
     height: 250px;
+    padding-left: 10px;
+    border: .2em solid #cececf;
+
 }
 .handhover{
     cursor: pointer;
@@ -363,13 +447,10 @@ p.description_content{
     padding-top: 20px;
     float: left;
 }
-.card-title{
-    text-align: center;
 
-}
 .work-title{
-    text-align: center;
-
+    text-align: left;
+    color: black;
 }
 
 #experience-option-1{
