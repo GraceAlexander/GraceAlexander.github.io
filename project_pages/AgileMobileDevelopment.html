@@ -39,7 +39,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Caroline Grace Alexander</a>
+      <a class="navbar-brand" href="../index.html#">Caroline Grace Alexander</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -59,23 +59,23 @@
 
 <div id="outerdiv">
 	<h1> Agile Mobile Development </h1>
-	<h2 class = "descriptor"> EECS 394 </h2>
+	<h2 class = "descriptor"> Lurie Childrens Hospital </h2>
 	<div class="content">
 	<div class="bigspacer"></div>
 
 	<img src="../images/projects/EECS394/home.png" alt="Mountain View" class="top-image"></img>
 	<div class = "brief_description"> 
 		<p>
-			I worked on the Atlasify research project with Prof. Doug Downey. The platform is designed to give explanations about how subjects are related to locations. The platform pulls descriptions from Wikipedia and uses Machine Learning to pick the best descriptions. 
+			Used agile methodology to develop an app for The Lurie Childrens Hospital of Chicago. The hospital wanted a system that allowed staff to update families on the status of their children in the Pediatric ICU. This system was meant to give routine updates to reduce the anxiety of family members, especially parents. The main technologies we used were Ionic and Firebase.
 		</p>
 		<h4> Contribution </h4>
 		<p>
-			I designed the interface to increase user feedback and added multiple classifiers to the machine learning algorithim
+			Pair programmed with other team members on mostly front end. Worked with the team and clients to make usability and brand decisions.
 		</p>
 		<h4> Links </h4>
 		<p>
-			<a href="http://atlasify.northwestern.edu/
-"> http://atlasify.northwestern.edu/ </a>
+			<a href="https://github.com/eecs394-s17/DayByDay
+"> https://github.com/eecs394-s17/DayByDay </a>
 		</p>
 	</div>
 
@@ -89,8 +89,10 @@
 
 	<img src="../images/projects/EECS394/parent_newsfeed.png" alt="Mountain View" class="supporting-image"></img>
 
-	<img src="../images/projects/EECS394/thankYou.jpg" alt="Mountain View" class="supporting-image"></img>
 	</div>
+	<p class="flush"> 
+		Parents can sign in with their email to see notifications about their children on their phone. There are two updates every day, one during the night shift and one during the day shift.<br>
+	</p>
 
 	<div class="littlespacer"></div>
 
@@ -98,55 +100,28 @@
 	<div class="supporting-image-wrapper">
 
 
-	<img src="../images/projects/EECS394/nurse_update.png" alt="Mountain View" class="supporting-image"></img>
+	<img src="../images/projects/EECS394/nurse_update.png" alt="Mountain View" class="supporting-image-two"></img>
 
-	<img src="../images/projects/EECS394/nurse_newsfeed.png" alt="Mountain View" class="supporting-image"></img>
+	<img src="../images/projects/EECS394/nurse_newsfeed.png" alt="Mountain View" class="supporting-image-two"></img>
 
-	<img src="../images/projects/EECS394/add_child.png" alt="Mountain View" class="supporting-image"></img>
 	</div>
 
 	<p class="flush"> 
-			Above is the relatedness ranking interface I designed and developed. <br>
+			The nurses use iPads to send updates for individual children and manage the information in the system<br>
 	</p>
 
-	<img src="../images/projects/Atlasify/old_popover.jpg" alt="Mountain View" class="supporting-image red-border-image"></img>
-	
-	<div class = "brief_description">
-		<p> 
-			In the initial popup (bordered in red), users had to choose a relation and then click submit. There was also a why box which was not necessary to fill out that detered users from submitting any feedback during testing. The machine learning algorithm could not interpret the reason a user typed in, so it was really only necessary to get the numerical relation data from users to improve the algorithm.
-			
-		</p>
-	</div>
-	<div class="littlespacer"> </div>
-	<div class="twoimagewrapper">
-		<img src="../images/projects/Atlasify/Popover_needfinding.jpg" alt="Mountain View" class="supporting-image-two sketch-border"></img>
-		<img src="../images/projects/Atlasify/Popover_idea.jpg" alt="Mountain View" class="supporting-image-two sketch-border"></img>
-	</div>
-	<p class="flush">
-		The sketches above are a mockup for description ranking improvement.
-		<br>
-		<br>
-		The design is consistent with that of the relatedness rankings already implemented since the section contents where you rated are replaced with a thank you message.
-		The potential to help improve the algorithm can be visualized with the icon.
-		Two clicks will ensure data is more accurate (but may decrease volume).
-	</p>	
-	<div class="minispacer"></div>
-	<h4> Algorithim </h4>
+	<div class="littlespacer"></div>
+	<h4> Database </h4>
 
 
-	<img src="../images/projects/Atlasify/data.jpg" alt="Mountain View" class="top-image"></img>
+	<img src="../images/projects/EECS394/add_child.png" alt="Mountain View" class="top-image"></img>
 	<div class = "brief_description"> 
 		<p >
-			My idea for improving the algorithm was to create history and media classifiers. I noticed a lot of the descriptions that were historical were "good" definitions. I also noticed that the descriptions from fictional books and other fictional media sources were poor descriptors because they were describing relations that weren't true. 
+			We used Firebase authentication for user sign in. Through the app, the nurses could add and disable parents, children, and staff members.
 		</p>
 	</div>
 
-	<p class="flush"> 
-	I created and trained bag of words history and media classifiers using scikit-learn. The media classifier was difficult to properly train because of the low number of media descriptions, but the history one was more accurate. I also incorporated Semantic Relatedness into the algorithm. This is the measure of Wikipedia pages you would have to click through to get to one page from another. A description whose subject has a low SR to both search topics would indicate a closer real world relation to those search topics. 
-		<br>
-		<br>
-	Using user inputed realatedness values, I trained a classifier that took in history, media, and SR relatedness and could predict a new relatedness value for a description.
-</p>
 </div>
+<div class="littlespacer"></div>
 </div>
 </body>

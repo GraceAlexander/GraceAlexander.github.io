@@ -55,3 +55,36 @@ $(function() {
     });
 });
 
+
+function updateExperienceBlurb(element, year)
+{  
+    console.log(element)
+    console.log(year)
+    var blurb;
+    console.log("updateExperienceBlurb called")
+     if(year=='2017'){
+        blurb="coming soon!"
+    }
+    if(year=='2016'){
+        blurb="coming soon!"
+    }
+    if(year=='2015'){
+        blurb="coming soon!"
+    }
+    if(year=='2014'){
+        blurb="coming soon!"
+    }
+    document.getElementById("experience-blurb").innerHTML = blurb;
+    updateSelected(element);
+}
+
+function updateSelected(element)
+{
+    document.getElementById("experience2017").style.background = "black";
+    document.getElementById("experience2016").style.background = "black";
+    document.getElementById("experience2015").style.background = "black";
+    document.getElementById("experience2014").style.background = "black";
+    document.getElementById(element).style.background = "#008ca8";
+}
+
+
