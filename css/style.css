@@ -426,12 +426,12 @@ p.description_content{
     text-align: center;
     height: 250px;
     padding-left: 10px;
-    border: .2em solid #cececf;
+    border: .1em solid #cececf;
 
 }
 .handhover{
-    cursor: pointer;
-    padding-top: 50px;
+/*    cursor: pointer;
+*/    padding-top: 50px;
     height: 100%;
 }
 
